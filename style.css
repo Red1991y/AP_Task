@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+header h1 {
+    color: white;
+    font-size: 300%;
+    background: linear-gradient(to right, rgb(203, 17, 39), rgba(37, 117, 252, 1));
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+nav {
+    position: absolute;
+    top: 40px;
+    left: 1050px;
+    border-radius: black;
+}
+
+nav a {
+    color: white;
+    font-size: 120%;
+    background-color: rgb(84, 120, 241);
+    box-shadow: 2px 2px black;
+    padding: 5px;
+    display: inline;
+}
+
+a:hover {
+    background-color: green;
+}
+
+.container {
+    padding: 4em;
+    width: 80%;
+    height: 200px;
+
+    position: relative;
+}
+
+.section {
+    position: absolute;
+}
+
+#logo {
+    position: relative;
+    float: left;
+    margin: 4% 2% 12% 10%;
+}
+
+#portada {
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+
+}
+.link {
+    color: blue;
+}
