@@ -3,38 +3,52 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*HEADER*/
+.headerH1 {
+    color: black;
+    font-size: 300%;
+}
+
+.navbar{
+    float: right;
+    padding-right: 4%;
+    padding-top: 2%;
+}
+
+.navButton {
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    padding: 1px 1em;
+    text-align: center;
+    background-color: rgb(84, 120, 241);
+    box-shadow: 2px 2px black;
+    padding: 5px;
+    display: inline;
+    font-size: 1.2em;
+    float: right;
+    margin-top: 10px;
     text-decoration: none;
 }
 
-header h1 {
-    color: white;
-    font-size: 300%;
-    background: linear-gradient(to right, rgb(203, 17, 39), rgba(37, 117, 252, 1));
+.navButton {
+    margin-left: 10px;
+}
+
+.navButton:hover {
+    background-color: green;
+}
+
+.headerImg {
+    display: inline-block;
+    position: relative;
 }
 
 h2 {
     text-align: center;
     color: black;
-}
-
-nav {
-    position: absolute;
-    top: 40px;
-    left: 1050px;
-    border-radius: black;
-}
-
-nav a {
-    color: white;
-    font-size: 120%;
-    background-color: rgb(84, 120, 241);
-    box-shadow: 2px 2px black;
-    padding: 5px;
-    display: inline;
-}
-
-a:hover {
-    background-color: green;
 }
 
 .container {
@@ -45,10 +59,13 @@ a:hover {
     position: relative;
 }
 
-.section {
-    position: absolute;
+section {
+    padding: 0px 0px 0px 50px;
 }
 
+section h3 {
+    padding: 0px 0px 15px 0px;
+}
 #logo {
     position: relative;
     float: left;
@@ -63,4 +80,42 @@ a:hover {
 }
 .link {
     color: blue;
+}
+
+span {
+    font-weight: 900;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+th {
+    background-color: var(--blue-03);
+    color: var(--white-01);
+    align-items: center;
+    padding:20px 100px 20px 100px;
+}
+
+td {
+    padding: 10px 0px 10px 90px;
+    background-color: var(--white-01);
+}
+
+.footerTable {
+    padding: 70px 100px 10px 90px;
+}
+ul {
+    list-style: none;
+}
+
+#lista {
+    list-style: circle;
+}
+#prueba {
+    padding-left: 80px;
+}
+#title {
+    padding-top: 20px;
 }
