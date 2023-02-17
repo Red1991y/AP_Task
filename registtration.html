@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="headerH1">Mighty Ducks Hockey League</h1>
+        </div>
+
+        <div class="navbar">
+            <nav>        
+                <a class="navButton" href="/about.html">About</a>
+                <a class="navButton" href="/contact.html">Contact</a>
+                <a class="navButton" href="/gameInformation.html">Game Information</a>
+                <a class="navButton" href="/rules.html">Rules</a>
+                <a class="navButton" href="/index.html">Home</a>
+                <a class="navButton" href="#">Registration</a>
+        </nav>
+        </div>
+            <div>
+                <img class="headerImg" src="./assets/design1_image2.jpg" width="100%" alt="">
+            </div>
+    </header>
+
+    <main>
+        <h2 id="tituloRegistro">Registration Form</h2>
+        
+        <div class="formulario">
+            <form action="/show_data.html" class="formulario">
+                <label for="">Player´s First Name:</label>
+                <input required name="first_Name" type="text" class="form_input" maxlength="15">
+
+                <label for="">Last Name:</label>
+                <input required name="last_name" type="text" class="form_input" maxlength="15">
+
+                <label for="">Street Address:</label>
+                <input required name="address" type="text" class="form_input" maxlength="20">
+
+                <label for="">City:</label>
+                <input required name="city" type="text" class="form_input" maxlength="20">
+
+                <label for="">Zip Code:</label>
+                <input required name="code" type="text" class="form_input" maxlength="20">
+
+                <label for="">Birth Date(mm/dd/yy):</label>
+                <input required name="bird_date" type="date" class="form_input">
+
+                    <label>
+                        Gender:
+                        <select name="genero" id="">
+                            <option value="F">Female</option>
+                            <option value="M">Male</option>
+                            <option disabled selected value="XY">No binario</option>
+                        </select>
+                    </label><br>  
+        </div>
+
+
+            <div class="formulario">
+                <label>
+                    Grade:
+                    <input type="checkbox" name="anio" id="youth" value="grado">
+                </label>
+                
+                <label>
+                    Pre-School
+                </label>
+                <label>
+                    <input type="checkbox" name="anio" value="grado_1">
+                    1st
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="anio" value="grado_2">
+                    2nd
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="anio" value="grado_3">
+                    3rd
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="anio" value="grado_4">
+                    4th
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="anio" value="grado_5">
+                    5th
+                </label><br>
+
+                <button>Enviar datos</button>
+            </div>
+        </form>
+        </div>
+
+
+
+
+        <div class="formulario">
+            <h3 id="tituloText"></h3>
+        <form action="/show_data.html">
+            <label>
+               <p><strong>Which elementary school do you live near</strong></p>
+               <p><strong>Closest School:</strong></p>
+               
+                <select name="escuela" id="">
+                    <option disabled selected>Select a school</option>
+                    <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                    <option value="Greenbay">Greenbay</option>
+                    <option value="Howard A Yeager">Howard A Yeager</option>
+                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                    <option value="North Elementary">North Elementary</option>
+                    <option value="South Elementary">South Elementary</option>
+                </select>
+            </label><br>
+            <button>Enviar escuela</button><br>
+        </form>
+    </div>
+
+
+        <div>
+            <form action="/show_data.html" class="formulario">
+                <p><strong>What position(s) do you normally play? (check all taht apply)</strong></p>
+        
+            <label>
+                <input name="posicion" type="checkbox" value="Forward">
+                Forward
+            </label>
+            <label>
+                <input name="posicion" type="checkbox" value="Defense">
+                Defense
+            </label>
+            <label>
+                <input name="posicion" type="checkbox" value="Midfield">
+                Midfield
+            </label>
+            <label>
+                <input name="posicion" type="checkbox" value="Goalkeeper">
+                Goalkeeper
+            </label><br>
+            <button>enviar posicion</button>
+            </form>
+            
+        </div>
+
+
+
+
+
+    <div>
+        <form action="/show_data.html" class="formulario">
+            <p><strong>Uniform Size</strong></p>
+            <label>
+                <input name="talle" type="checkbox" value="Youth Small">
+                Youth Small
+            </label>
+            <label>
+                <input name="talle" type="checkbox" name="talle" value="Youth Medium">
+                Youth Medium
+            </label>
+            <label>
+                <input name="talle" type="checkbox" value="Youth Large">
+                Youth Large
+            </label>
+            <label>
+                <input name="talle" type="checkbox" value="Small">
+                Small
+            </label>
+
+            <label>
+                <input name="talle" type="checkbox" value="Medium">
+                Medium
+            </label>
+            <label>
+                <input name="talle" type="checkbox" value="Large">
+                Large
+            </label>
+            <label>
+                <input name="talle" type="checkbox" value="Extra-Large">
+                Extra-Large
+            </label><br>
+            <button>enviar talle</button>
+        </form>
+ 
+    </div>
+    
+
+
+
+
+
+
+
+       
+
+        <div>
+            <h3 id="tituloText">Permission to Play</h3>
+            <pre>
+                I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
+                rules of the Mighty Ducks Hockey League (MDHL). In recogniziong the possibility of physical injury
+                associated with hockey and in consideraion for the "League" accepting the registrant for its
+                hockey pregrams and activies, I hereby release, discharge, and/orr otherwise indemnify MDHL,
+                their employees and associated personnel and volunteers, includeing the facilities used for
+                practices and games, against any claim by or on behalf of the registrant as a result of the
+                registrant`s participation in the programand/orbeing trasported to or from MDHL sponsored
+                activities, which traspostation.
+                By entering your name below, I herebyagree and authorize the above. In addition, by signing below, lalso
+                acknowledge that I have read the cancellation policy and agree to its terms. 
+            </pre>
+        </div>
+
+
+
+
+
+
+
+        
+        <form action="/show_data.html" class="formulario">
+            <label for="dato">Parent/GuardianSignature:</label>
+            <input name="firma" type="text" class="form_input" maxlength="20" required><br>
+
+            <label for="dato">Date:</label>
+            <input name="fecha" type="date" class="form_input" required><br>
+            <button>enviar firma</button>
+        </form>
+    
+
+    </main>
+</body>
+</html>
