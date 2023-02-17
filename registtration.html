@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/Logo Mighty ducks-01.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
@@ -32,85 +33,92 @@
         <h2 id="tituloRegistro">Registration Form</h2>
         
         <div class="formulario">
-            <form action="/show_data.html" class="formulario">
+            <form action="/show_data.html">
+
+                <div>
                 <label for="">Player´s First Name:</label>
                 <input required name="first_Name" type="text" class="form_input" maxlength="15">
 
                 <label for="">Last Name:</label>
                 <input required name="last_name" type="text" class="form_input" maxlength="15">
+                </div>
 
-                <label for="">Street Address:</label>
-                <input required name="address" type="text" class="form_input" maxlength="20">
+                <div>
+                    <label for="">Street Address:</label>
+                    <input required name="address" type="text" class="form_input" maxlength="20">
+                </div>
 
-                <label for="">City:</label>
-                <input required name="city" type="text" class="form_input" maxlength="20">
+                <div>
+                    <label for="">City:</label>
+                    <input required name="city" type="text" class="form_input" maxlength="20">
+    
+                    <label for="">Zip Code:</label>
+                    <input required name="code" type="number" class="form_input" maxlength="20">
+                </div>
 
-                <label for="">Zip Code:</label>
-                <input required name="code" type="text" class="form_input" maxlength="20">
-
-                <label for="">Birth Date(mm/dd/yy):</label>
-                <input required name="bird_date" type="date" class="form_input">
-
-                    <label>
-                        Gender:
-                        <select name="genero" id="">
-                            <option value="F">Female</option>
-                            <option value="M">Male</option>
-                            <option disabled selected value="XY">No binario</option>
-                        </select>
-                    </label><br>  
+                <div>
+                    <label for="">Birth Date(mm/dd/yy):</label>
+                    <input required name="bird_date" type="date" class="form_input">
+    
+                        <label>
+                            Gender:
+                            <select name="genero" id="">
+                                <option value="F">Female</option>
+                                <option value="M">Male</option>
+                                <option value="XY">No binario</option>
+                            </select>
+                        </label>  
+                    </div>
         </div>
 
-
-            <div class="formulario">
-                <label>
+        <!--formulario de seleccion de año -->
+            <div class="formulario_grado">
+                <label class="grado">
                     Grade:
-                    <input type="checkbox" name="anio" id="youth" value="grado">
+                    <input type="radio" name="anio" id="youth" value="grado">
                 </label>
                 
-                <label>
+                <label class="grado">
                     Pre-School
                 </label>
-                <label>
-                    <input type="checkbox" name="anio" value="grado_1">
+                <label class="grado">
+                    <input type="radio" name="anio" value="grado_1">
                     1st
                 </label>
                 
-                <label>
-                    <input type="checkbox" name="anio" value="grado_2">
+                <label class="grado">
+                    <input type="radio" name="anio" value="grado_2">
                     2nd
                 </label>
                 
-                <label>
-                    <input type="checkbox" name="anio" value="grado_3">
+                <label class="grado">
+                    <input type="radio" name="anio" value="grado_3">
                     3rd
                 </label>
                 
-                <label>
-                    <input type="checkbox" name="anio" value="grado_4">
+                <label class="grado">
+                    <input type="radio" name="anio" value="grado_4">
                     4th
                 </label>
                 
-                <label>
-                    <input type="checkbox" name="anio" value="grado_5">
+                <label class="grado">
+                    <input type="radio" name="anio" value="grado_5">
                     5th
-                </label><br>
+                </label>
+            </div>
 
+            <div class="formulario">
                 <button>Enviar datos</button>
             </div>
         </form>
-        </div>
-
-
-
-
-        <div class="formulario">
+        </div><br>
+<!--formulacion de la escuela-->
+    <div class="formulario">
             <h3 id="tituloText"></h3>
         <form action="/show_data.html">
             <label>
-               <p><strong>Which elementary school do you live near</strong></p>
+               <p><strong>Which elementary school do you live near</strong></p><br>
                <p><strong>Closest School:</strong></p>
-               
                 <select name="escuela" id="">
                     <option disabled selected>Select a school</option>
                     <option value="AJ Katzenmaier">AJ Katzenmaier</option>
@@ -120,87 +128,89 @@
                     <option value="North Elementary">North Elementary</option>
                     <option value="South Elementary">South Elementary</option>
                 </select>
+                <button>Enviar escuela</button><br>
             </label><br>
-            <button>Enviar escuela</button><br>
         </form>
     </div>
+<!--formulario de posicion en donde juega-->
+        <div class="formulario">
+            <form action="/show_data.html">
+                <p class="cheackbox"><strong>What position(s) do you normally play? (check all taht apply)</strong></p>          
+                <div class="cheackbox">
+                    <label class="column">
+                        <input name="posicion" type="checkbox" value="Forward">
+                        Forward
+                    </label>
+                    <label class="column">
+                        <input name="posicion" type="checkbox" value="Midfield">
+                        Midfield
+                    </label>
+                </div>
 
-
-        <div>
-            <form action="/show_data.html" class="formulario">
-                <p><strong>What position(s) do you normally play? (check all taht apply)</strong></p>
+                <div class="cheackbox">
+                    <label class="column">
+                        <input name="posicion" type="checkbox" value="Defense">
+                        Defense
+                    </label>
         
-            <label>
-                <input name="posicion" type="checkbox" value="Forward">
-                Forward
-            </label>
-            <label>
-                <input name="posicion" type="checkbox" value="Defense">
-                Defense
-            </label>
-            <label>
-                <input name="posicion" type="checkbox" value="Midfield">
-                Midfield
-            </label>
-            <label>
-                <input name="posicion" type="checkbox" value="Goalkeeper">
-                Goalkeeper
-            </label><br>
+                    <label class="column">
+                        <input name="posicion" type="checkbox" value="Goalkeeper">
+                        Goalkeeper
+                    </label>
+                </div>
             <button>enviar posicion</button>
             </form>
-            
         </div>
-
-
-
-
-
+<!--formulario de seleccion de talle-->
     <div>
         <form action="/show_data.html" class="formulario">
-            <p><strong>Uniform Size</strong></p>
-            <label>
-                <input name="talle" type="checkbox" value="Youth Small">
-                Youth Small
-            </label>
-            <label>
-                <input name="talle" type="checkbox" name="talle" value="Youth Medium">
-                Youth Medium
-            </label>
-            <label>
-                <input name="talle" type="checkbox" value="Youth Large">
-                Youth Large
-            </label>
-            <label>
-                <input name="talle" type="checkbox" value="Small">
-                Small
-            </label>
+            <p class="cheackbox"><strong>Uniform Size</strong></p>
 
-            <label>
-                <input name="talle" type="checkbox" value="Medium">
-                Medium
-            </label>
-            <label>
-                <input name="talle" type="checkbox" value="Large">
-                Large
-            </label>
-            <label>
-                <input name="talle" type="checkbox" value="Extra-Large">
-                Extra-Large
-            </label><br>
+            <div class="cheackbox">
+                <label class="column">
+                    <input name="talle" type="radio" value="Youth Small">
+                    Youth Small
+                </label>
+                <label>
+                    <input name="talle" type="radio" value="Medium">
+                    Medium
+                </label>
+            </div>
+
+            <div class="cheackbox">
+                <label class="column">
+                    <input name="talle" type="radio" value="Youth Medium">
+                    Youth Medium
+                </label>
+                <label>
+                    <input name="talle" type="radio" value="Large">
+                    Large
+                </label>
+            </div>
+
+
+
+            <div class="cheackbox">
+                <label class="column">
+                    <input name="talle" type="radio" value="Youth Large">
+                    Youth Large
+                </label>
+                <label class="column">
+                    <input name="talle" type="radio" value="Extra-Large">
+                    Extra-Large
+                </label>
+            </div>
+
+            <div class="cheackbox">
+                <label>
+                    <input name="talle" type="radio" value="Small">
+                    Small
+                </label>
+            </div>
             <button>enviar talle</button>
         </form>
- 
     </div>
-    
-
-
-
-
-
-
-
-       
-
+<!--texto-->
         <div>
             <h3 id="tituloText">Permission to Play</h3>
             <pre>
@@ -215,25 +225,37 @@
                 By entering your name below, I herebyagree and authorize the above. In addition, by signing below, lalso
                 acknowledge that I have read the cancellation policy and agree to its terms. 
             </pre>
-        </div>
-
-
-
-
-
-
-
-        
-        <form action="/show_data.html" class="formulario">
-            <label for="dato">Parent/GuardianSignature:</label>
-            <input name="firma" type="text" class="form_input" maxlength="20" required><br>
-
-            <label for="dato">Date:</label>
-            <input name="fecha" type="date" class="form_input" required><br>
-            <button>enviar firma</button>
-        </form>
+        </div>  
+        <!--formulario de autorizacion-->
+        <div  class="formulario">
+            <form action="/show_data.html">
+                <div class="datos_parent">
+                    <label for="dato">Parent/GuardianSignature:</label>
+                    <input name="firma" type="text" class="form_input" maxlength="20" required>
+                </div>
     
+                <div class="datos_parent">
+                    <label for="dato">Date:</label>
+                    <input name="fecha" type="date" class="form_input" required><br>
+                </div>
+                <button>enviar firma</button>
+            </form>
+        </div>
+        <!--ubicaciones-->
+        <h3 id="tituloText">Ubicaciones:</h3>
+        <div class="mapas">
+            
+            <div class="mapa">
+                <h2>AJ Katzenmaier Academy</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.7804581651044!2d-87.86499328523851!3d42.32588114525323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses!2sar!4v1676660935225!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
+            <div class="mapa">
+                <h2>Marjorie P Hart</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379941.1589064522!2d-88.17335128784178!3d41.92961289444422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2637f9d7%3A0xdbff5d5dfcfcfa35!2sMarjorie%20P%20Hart%20Elementary!5e0!3m2!1ses!2sar!4v1676661094581!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>   
     </main>
+    <div></div><br><br>
 </body>
 </html>
